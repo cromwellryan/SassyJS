@@ -1,6 +1,6 @@
 var http = require('http')
 	, url = require('url')
-	, respond = require('../')
+	, respond = require('../../sassy')
 	, server;
 
 server = http.createServer(function(req,res) {
