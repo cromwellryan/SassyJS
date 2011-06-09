@@ -10,7 +10,7 @@ server = http.createServer(function(req,res) {
 		case "/":
 			respond.to(res).with.html.content("hello there!");
 			break;
-		default: respond.to(res).with.html.send404();
+		default: respond.to(res).with.html.send404("<html><head><title>Wierd...</title></head><body><a href=\"http://google.com\">Let me suggest my friend google</a></body></html>");
 	}
 }),
 
